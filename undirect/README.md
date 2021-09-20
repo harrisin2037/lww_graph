@@ -361,9 +361,3 @@ Make long story short, usally I mock the graph(s) and run the function under dif
 - idempotent(A U A = A)
 
 There are unit tests for these three aspect when different replicas merge together. Those functions merge in different order, different grouping, and also duplicated, and the results are identical and checked by retrieve the adjacency list, which is the relationship of different vertices, if the results are identical, they are consider as positive consistence result.
-
-# Postscript
-
-Actually I immidiately felt I write shitty code again, for example, I wanted to make design clean by abstract the lww set but actually I didn't, I put into the graph directly for easier to retrieve value by the map for different actions. Also the test cases seems like not really look easy to for people who doesn't familar with what's going on for the code.
-
-Hope you enjoy the work I did. I felt relieve as I tried to make it as a completed piece. Thanks for the chance and it is always interesting for challenge like this task. Looking forward for the feedback :). Thanks for your time.
